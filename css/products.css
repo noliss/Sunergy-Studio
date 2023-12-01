@@ -1,0 +1,95 @@
+.about {
+  margin-top: 130px;
+}
+
+.about__block {
+  position: relative;
+}
+
+.about__block::before {
+  content: '';
+  cursor: pointer;
+  width: 94px;
+  height: 95px;
+  background-image: url('../icons/play_very_big.svg');
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.example {
+  margin-top: 130px;
+}
+
+.example__block {
+  max-width: 603px;
+  margin: 0 auto;
+}
+
+.example__info {
+  padding: 0 43px;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  margin-top: -5px;
+  border-radius: 0px 0px 8.822px 8.822px;
+  background: #222;
+}
+
+.example__title {
+  max-width: 417px;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.product__block-interview {
+  background-image: url('../images/products/micro.png');
+}
+
+.broadcast {
+  margin-top: 120px;
+}
+
+.interview__image {
+  min-width: 340px;
+  min-height: 220px;
+}
+
+.interview-slider__item {
+  display: flex !important;
+  justify-content: center;
+}
+
+.interview__item {
+  max-width: 340px;
+  margin-right: 34px;
+}
+
+.interview__item:last-child {
+  margin-right: 0;
+}
+
+.interview__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.interview__info {
+  padding-left: 24px;
+  width: calc(100% + 2px);
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  min-height: 68px;
+  border-radius: 0px 0px 5px 5px;
+  background: #222; 
+}
+
+.interview__text {
+  max-width: 236px;
+  font-size: 12px;
+  margin-left: 17px;
+}

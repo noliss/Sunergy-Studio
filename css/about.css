@@ -1,0 +1,46 @@
+.slick__arrow--right {
+  right: -60px;
+}
+
+.slick__arrow--left {
+  left: -60px;
+}
+
+.about-us__video {
+  max-width: 731px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-us__video::before {
+  content: '';
+  cursor: pointer;
+  width: 78px;
+  height: 78px;
+  background-image: url('../icons/play_big.svg');
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.hwork {
+  margin-top: 150px;
+}
+
+.hwork__item {
+  width: 100%;
+  padding: 28px 0 28px 50px;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+  margin-bottom: 20px;
+}
+
+.hwork__item:last-child {
+  margin-bottom: 0px;
+}
+
+.hwork__text {
+  font-size: 25px;
+}
