@@ -1,0 +1,32 @@
+.reels-examples {
+  margin-top: 30px;
+}
+
+.reels-examples__slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reels-examples__slider-link {
+  margin-right: 90px;
+}
+
+.reels-examples__slider-image {
+  border-radius: 3.817px;
+  border: 0.763px solid #FFF;
+
+  background: #FFF;
+}
+
+.reels-examples__slider-link:last-child {
+  margin-right: 0;
+}
+
+.slick__arrow--right {
+  right: 70px;
+}
+
+.slick__arrow--left {
+  left: 70px;
+}

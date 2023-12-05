@@ -11,4 +11,8 @@ $(document).ready(function(){
     prevArrow: "<img class='slick__arrow--left' src='../icons/arrow-left.svg' />",
     nextArrow: "<img class='slick__arrow--right' src='../icons/arrow-right.svg' />"
   })
+  $('.reels-examples__slider').slick({
+    prevArrow: "<img class='slick__arrow--left' src='../icons/arrow-left.svg' />",
+    nextArrow: "<img class='slick__arrow--right' src='../icons/arrow-right.svg' />"
+  })
 });
