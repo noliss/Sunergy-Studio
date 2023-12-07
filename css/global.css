@@ -68,6 +68,10 @@ h2 span {
   color: #ffa500;
 }
 
+.h2--left {
+  text-align: left;
+}
+
 .product__title {
   text-align: center;
   font-size: 33px;
