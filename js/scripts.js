@@ -49,7 +49,7 @@ $(".form__button").click(function () {
   if (name !== "" && phone !== "") {
     $.ajax({
       type: "POST",
-      url: "send_email.php",
+      url: "../php/send_email.php",
       data: {
         name: name,
         phone: phone,
