@@ -28,3 +28,25 @@ $(
     800
   );
 });
+
+// Отправка почты
+$('.form__button').click(function() {
+  // Здесь вы можете разместить код для выполнения отправки данных через AJAX
+  $.ajax({
+      type: "POST",
+      url: "send_email.php",
+      data: {
+          name: $('#name').val(),
+          phone: $('#phone').val()
+      },
+      dataType: "json",
+      success: function (response) {
+          if (response.success) {
+              // Обработка успешной отправки
+          } else {
+              // Обработка ошибки
+              alert(response.message);
+          }
+      }
+  });
+});
