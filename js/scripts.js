@@ -19,7 +19,7 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 $(
-  ".about-info__button, .partners__button, .application__button, .sert__button, .sert-second__button"
+  ".about-info__button, .partners__button, .application__button, .sert__button, .sert-second__button, .slider-four__button"
 ).click(function () {
   $("html, body").animate(
     {

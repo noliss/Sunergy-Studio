@@ -72,6 +72,11 @@
   margin-bottom: 150px;
 }
 
+.studio-slider__img {
+  min-width: 660px;
+  min-height: 430px;
+}
+
 .studio-slider__item {
   display: flex !important;
 }

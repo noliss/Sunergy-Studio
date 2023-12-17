@@ -89,6 +89,11 @@
   background: #222; 
 }
 
+.example__logo {
+  max-width: 70px;
+  width: 70px;
+}
+
 .interview__text {
   max-width: 236px;
   font-size: 12px;
