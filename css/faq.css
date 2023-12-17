@@ -103,3 +103,7 @@
 .faq__item:nth-child(2n) {
   margin-right: 0;
 }
+
+.faq__answer a {
+  color: #ffa500;
+}
