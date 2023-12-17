@@ -3,13 +3,9 @@
 }
 
 .reels-examples__slider-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.reels-examples__slider-link {
-  margin-right: 90px;
+  width: 220px;
+  max-width: 220px;
+  margin: 0 90px;
 }
 
 .reels-examples__slider-image {
@@ -19,14 +15,10 @@
   background: #FFF;
 }
 
-.reels-examples__slider-link:last-child {
-  margin-right: 0;
-}
-
 .slick__arrow--right {
-  right: 70px;
+  right: 30px;
 }
 
 .slick__arrow--left {
-  left: 70px;
+  left: 30px;
 }

@@ -43,5 +43,8 @@
 }
 
 .map iframe {
+  padding: 0 70px;
+  min-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }

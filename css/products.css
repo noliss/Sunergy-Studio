@@ -64,13 +64,14 @@
 }
 
 .interview__item {
+  width: 340px;
   max-width: 340px;
-  margin-right: 34px;
+  margin: 0 30px;
 }
 
-.interview__item:last-child {
+/* .interview__item:last-child {
   margin-right: 0;
-}
+} */
 
 .interview__logo {
   width: 40px;

@@ -93,6 +93,7 @@ h2 span {
 }
 
 .button {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
