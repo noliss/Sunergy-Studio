@@ -58,6 +58,9 @@
     border-radius: 5px;
     border: 0.5px solid #fff;
   }
+  .produced__block img {
+    max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 1165px) {
@@ -450,6 +453,7 @@
   .contacts::after,
   .sert::after,
   .producers::after,
+  .produced::after,
   .equipment::after {
     display: none;
   }

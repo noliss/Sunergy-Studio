@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (!empty($name) && !empty($phone)) {
     $to = "info@sunergystudio.ru";
-    $subject = "Заявка с сайта sunergystudio";
+    $subject = "=?utf-8?B?" . base64_encode("Заявка с сайта sunergystudio.ru") . "?=";
     $message = "
       <html>
       <head>
@@ -28,12 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </style>
       </head>
       <body>
-      <p>Имя: $name</p>
-      <p>Телефон: $phone</p>
+      <p>Новая заявка sunergystudio.ru</p>
       <table>
         <tr>
           <th>Имя</th>
-          <th>Телефон</th>
+          <th>Номер телефона</th>
         </tr>
         <tr>
           <td>$name</td>
@@ -43,7 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </body>
       </html>
       ";
-    $headers = "From: info@sunergystudio.ru";
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8";
+    $headers .= "From: info@sunergystudio.ru";
 
     if (mail($to, $subject, $message, $headers)) {
       echo json_encode(["success" => true]);
