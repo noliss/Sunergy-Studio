@@ -4,10 +4,14 @@ $(document).ready(function(){
     nextArrow: "<img class='slick__arrow--right' src='../icons/arrow-right.svg' />",
     arrows: false,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
   $('.slider-four__slider').slick({
     prevArrow: "<img class='slick__arrow--left' src='../icons/arrow-left.svg' />",
     nextArrow: "<img class='slick__arrow--right' src='../icons/arrow-right.svg' />",
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1380,
@@ -24,6 +28,8 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1256,
@@ -54,6 +60,8 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1256,

@@ -19,7 +19,7 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 $(
-  ".about-info__button, .partners__button, .application__button, .sert__button, .sert-second__button, .slider-four__button"
+  ".about-info__button, .partners__button, .application__button, .sert__button, .sert-second__button, .slider-four__button, .produced__button"
 ).click(function () {
   $("html, body").animate(
     {
@@ -30,39 +30,47 @@ $(
 });
 
 // Отправка почты
-$(".form__button").click(function () {
-  var name = $("#name").val();
-  var phone = $("#phone").val();
+$('.form__button').click(function(event) {
+  event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
-  if (name === "") {
-    $("#name").css("border-color", "red");
+  var name = $('#name').val();
+  var phone = $('#phone').val();
+  var agreeChecked = $('#agree').is(':checked');
+  if (name == '') {
+      $('#name').css('border-color', 'red');
+      return; // Останавливаем выполнение функции, если поле не заполнено
   } else {
-    $("#name").css("border-color", "");
+      $('#name').css('border-color', '');
   }
 
-  if (phone === "") {
-    $("#phone").css("border-color", "red");
+  if (phone == '') {
+      $('#phone').css('border-color', 'red');
+      return; // Останавливаем выполнение функции, если поле не заполнено
   } else {
-    $("#phone").css("border-color", "");
+      $('#phone').css('border-color', '');
   }
 
-  if (name !== "" && phone !== "") {
-    $.ajax({
+  if (!agreeChecked) {
+      alert('Подтвердите пользовательское соглашение');
+      return; // Останавливаем выполнение функции, если соглашение не подтверждено
+  }
+
+  // Если все поля заполнены и соглашение подтверждено, тогда отправляем данные
+  $.ajax({
       type: "POST",
-      url: "./php/send_form.php",
+      url: "../php/send_form.php",
       data: {
-        name: name,
-        phone: phone,
+          name: name,
+          phone: phone
       },
       dataType: "json",
       success: function (response) {
-        if (response.success) {
-          // Обработка успешной отправки
-        } else {
-          // Обработка ошибки
-          alert(response.message);
-        }
-      },
-    });
-  }
+          if (response.success) {
+              // Обработка успешной отправки
+          } else {
+              // Обработка ошибки
+              alert(response.message);
+          }
+      }
+  });
 });
