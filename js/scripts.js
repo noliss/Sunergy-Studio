@@ -30,23 +30,39 @@ $(
 });
 
 // Отправка почты
-$('.form__button').click(function() {
-  // Здесь вы можете разместить код для выполнения отправки данных через AJAX
-  $.ajax({
+$(".form__button").click(function () {
+  var name = $("#name").val();
+  var phone = $("#phone").val();
+
+  if (name === "") {
+    $("#name").css("border-color", "red");
+  } else {
+    $("#name").css("border-color", "");
+  }
+
+  if (phone === "") {
+    $("#phone").css("border-color", "red");
+  } else {
+    $("#phone").css("border-color", "");
+  }
+
+  if (name !== "" && phone !== "") {
+    $.ajax({
       type: "POST",
       url: "send_email.php",
       data: {
-          name: $('#name').val(),
-          phone: $('#phone').val()
+        name: name,
+        phone: phone,
       },
       dataType: "json",
       success: function (response) {
-          if (response.success) {
-              // Обработка успешной отправки
-          } else {
-              // Обработка ошибки
-              alert(response.message);
-          }
-      }
-  });
+        if (response.success) {
+          // Обработка успешной отправки
+        } else {
+          // Обработка ошибки
+          alert(response.message);
+        }
+      },
+    });
+  }
 });
