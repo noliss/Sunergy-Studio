@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/slick.css" />
   <link rel="stylesheet" href="../css/about.css" />
   <link rel="stylesheet" href="../css/media.css" />
-  <title>О нас</title>
+  <title>О студии</title>
 </head>
 
 <body>
@@ -45,6 +45,11 @@
           </li>
         </ul>
       </nav>
+      <div class="header-menu__mobile">
+        <div class="header-menu__mobile-burger">
+            <span></span>
+        </div>
+      </div>
       <div class="header__socials">
         <a href="#">
           <img src="../icons/ws.svg" />
@@ -57,9 +62,49 @@
         </a>
       </div>
     </div>
+    <nav class="header-menu__mobile-nav header-menu__mobile-nav--hidden">
+      <img src="../icons/logo.svg" class="header-menu__mobile-logo" />
+      <ul class="header-menu__mobile-list">
+        <li class="header-menu__mobile-item">
+          <a href="../index.html" class="header-menu__mobile-link">Главная</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./about.html" class="header-menu__mobile-link">Информация о студии и локациях</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./product-podcast.html" class="header-menu__mobile-link">Услуги и цены</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a class="header-menu__mobile-link">Наши клиенты</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./faq.html" class="header-menu__mobile-link">FAQ</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./producers.html" class="header-menu__mobile-link">Продюсерам</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./serts.html" class="header-menu__mobile-link">Сертификат</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./contacts.html" class="header-menu__mobile-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="header-menu__mobile-socials">
+        <a href="#" class="header-menu__mobile-socials-link">
+          <img src="../icons/ws.svg">
+        </a>
+        <a href="#" class="header-menu__mobile-socials-link">
+          <img src="../icons/tg.svg">
+        </a>
+        <a href="#" class="header-menu__mobile-socials-link">
+          <img src="../icons/ph.svg">
+        </a>
+      </div>
+    </nav>
   </header>
   <h1 class="h1__custom">О <span>студии</span></h1>
-  <section class="slider-four">
+  <section class="slider-four about-us-m">
     <div class="container">
       <div class="slider-four__block">
         <div class="slider-four__slider">
@@ -253,6 +298,7 @@
     </script>
   <script src="../js/slick.min.js"></script>
   <script src="../js/slick-inits.js"></script>
+  <script src="../js/scripts.js"></script>
 </body>
 
 </html>

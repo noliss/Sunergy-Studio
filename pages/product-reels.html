@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="../css/products.css" />
   <link rel="stylesheet" href="../css/reels.css" />
   <link rel="stylesheet" href="../css/media.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
   <title>О нас</title>
 </head>
 
@@ -46,6 +50,11 @@
           </li>
         </ul>
       </nav>
+      <div class="header-menu__mobile">
+        <div class="header-menu__mobile-burger">
+            <span></span>
+        </div>
+      </div>
       <div class="header__socials">
         <a href="#">
           <img src="../icons/ws.svg" />
@@ -58,6 +67,46 @@
         </a>
       </div>
     </div>
+    <nav class="header-menu__mobile-nav header-menu__mobile-nav--hidden">
+      <img src="../icons/logo.svg" class="header-menu__mobile-logo" />
+      <ul class="header-menu__mobile-list">
+        <li class="header-menu__mobile-item">
+          <a href="../index.html" class="header-menu__mobile-link">Главная</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./about.html" class="header-menu__mobile-link">Информация о студии и локациях</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./product-podcast.html" class="header-menu__mobile-link">Услуги и цены</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a class="header-menu__mobile-link">Наши клиенты</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./faq.html" class="header-menu__mobile-link">FAQ</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./producers.html" class="header-menu__mobile-link">Продюсерам</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./serts.html" class="header-menu__mobile-link">Сертификат</a>
+        </li>
+        <li class="header-menu__mobile-item">
+          <a href="./contacts.html" class="header-menu__mobile-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="header-menu__mobile-socials">
+        <a href="#" class="header-menu__mobile-socials-link">
+          <img src="../icons/ws.svg">
+        </a>
+        <a href="#" class="header-menu__mobile-socials-link">
+          <img src="../icons/tg.svg">
+        </a>
+        <a href="#" class="header-menu__mobile-socials-link">
+          <img src="../icons/ph.svg">
+        </a>
+      </div>
+    </nav>
   </header>
   <h1 class="h1__custom h1__product">Видеозапись <span>Reels, Shorts, TikTok</span></h1>
   <p class="product__title">Выберите услугу</p>
@@ -124,28 +173,18 @@
       <div class="reels-examples__block">
         <div class="reels-examples__slider">
           <div class="reels-examples__slider-item">
-            <a href="" class="reels-examples__slider-link">
-              <img src="../images/products/reels-example_1.png" alt="" class="reels-examples__slider-image">
+            <a href="../video/reels/1.mp4" class="reels-examples__slider-link" data-fancybox="gallery" data-caption="Первый">
+              <img src="../images/products/reels/1.jpg" alt="" class="reels-examples__slider-image">
             </a>
           </div>
           <div class="reels-examples__slider-item">
-            <a href="" class="reels-examples__slider-link">
-              <img src="../images/products/reels-example_1.png" alt="" class="reels-examples__slider-image">
+            <a href="../video/reels/2.mp4" class="reels-examples__slider-link" data-fancybox="gallery" data-caption="Второй">
+              <img src="../images/products/reels/2.jpg" alt="" class="reels-examples__slider-image">
             </a>
           </div>
           <div class="reels-examples__slider-item">
-            <a href="" class="reels-examples__slider-link">
-              <img src="../images/products/reels-example_1.png" alt="" class="reels-examples__slider-image">
-            </a>
-          </div>
-          <div class="reels-examples__slider-item">
-            <a href="" class="reels-examples__slider-link">
-              <img src="../images/products/reels-example_1.png" alt="" class="reels-examples__slider-image">
-            </a>
-          </div>
-          <div class="reels-examples__slider-item">
-            <a href="" class="reels-examples__slider-link">
-              <img src="../images/products/reels-example_1.png" alt="" class="reels-examples__slider-image">
+            <a href="../video/reels/3.mp4" class="reels-examples__slider-link" data-fancybox="gallery" data-caption="Третий">
+              <img src="../images/products/reels/3.jpg" alt="" class="reels-examples__slider-image">
             </a>
           </div>
         </div>
@@ -199,8 +238,10 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
     </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="../js/slick.min.js"></script>
   <script src="../js/slick-inits.js"></script>
+  <script src="../js/scripts.js"></script>
 </body>
 
 </html>

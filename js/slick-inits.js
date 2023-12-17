@@ -53,6 +53,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    infinite: true,
     responsive: [
       {
         breakpoint: 1256,

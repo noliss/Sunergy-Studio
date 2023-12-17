@@ -10,4 +10,10 @@ $('.faq__block').on('click', '.faq__item', function() {
 $('.header-menu__mobile-burger').click(function() {
   console.log('123');
   $('.header-menu__mobile-burger').toggleClass('open-menu');
+  $('.header-menu__mobile-nav').toggleClass('header-menu__mobile-nav--hidden');
+});
+
+// 
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
 });

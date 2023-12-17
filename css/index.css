@@ -278,3 +278,7 @@
 .faq {
   margin-top: 120px;
 }
+
+.faq::after {
+  display: none !important;
+}

@@ -11,7 +11,8 @@
 .reels-examples__slider-image {
   border-radius: 3.817px;
   border: 0.763px solid #FFF;
-
+  max-width: 220px;
+  max-height: 387px;
   background: #FFF;
 }
 
