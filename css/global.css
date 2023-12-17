@@ -548,9 +548,26 @@ h2 span {
 }
 
 .application__image {
+  position: relative;
   max-width: 343px;
   max-height: 387px;
   margin-right: 37px;
+}
+
+.application__img {
+  position: relative;
+}
+
+.application__img::before {
+  content: "";
+  width: 64px;
+  height: 210px;
+  position: absolute;
+  background: linear-gradient(268deg, #FFA500 0%, #F90 100%);
+  filter: blur(60px);
+  top: 20%;
+  left: 45%;
+  transform: translate(-50%);
 }
 
 .application__button {

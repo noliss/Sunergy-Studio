@@ -66,9 +66,11 @@ $('.form__button').click(function(event) {
       dataType: "json",
       success: function (response) {
           if (response.success) {
+            alert('Ваша заявка была успешно отправлена!')
               // Обработка успешной отправки
           } else {
               // Обработка ошибки
+              alert('Возникла ошибка при отправке формы')
               alert(response.message);
           }
       }

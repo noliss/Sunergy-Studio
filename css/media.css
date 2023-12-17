@@ -334,6 +334,9 @@
     max-height: 270px;
     margin-right: 37px;
   }
+  .application__img::before {
+    height: 130px;
+  }
   .example__block {
     max-width: 380px;
     margin: 0 auto;
@@ -615,7 +618,6 @@
     align-items: flex-start;
   }
   .application__image {
-    margin-left: 20px;
     margin-bottom: 20px;
   }
   .map iframe {
