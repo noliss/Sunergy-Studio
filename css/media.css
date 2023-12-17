@@ -353,7 +353,8 @@
     align-items: center;
   }
   .form__input {
-    padding: 13px 88px;
+    padding: 13px 10px;
+    min-width: 240px;
   }
   .form__input--phone {
     max-width: 130px;
