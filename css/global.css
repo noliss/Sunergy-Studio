@@ -309,16 +309,21 @@ h2 span {
   font-size: 26.6px;
   background-color: transparent;
   max-width: 130px;
-  padding: 20px 88px;
-  text-align: center;
+  padding: 20px 20px;
+  text-align: left;
   border-radius: 15px;
   border: 1px solid #fff;
+  min-width: 286px;
 }
 
 .form__input--phone {
   max-width: 262px;
-  padding: 20px 22px;
+  padding: 20px 20px;
   margin-left: 24px;
+}
+
+.form__input::placeholder {
+  text-align: center;
 }
 
 .form__checkbox {

@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.about__block::before {
+/* .about__block::before {
   content: '';
   cursor: pointer;
   width: 94px;
@@ -16,7 +16,7 @@
   top: 43%;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 
 .example {
   margin-top: 130px;
@@ -54,7 +54,12 @@
 }
 
 .interview__image {
-  min-width: 340px;
+  border-radius: 5px;
+  border: 1px solid #FFF; 
+  object-fit: cover;
+  width: 342px;
+  height: 220px;
+  min-width: 342px;
   min-height: 220px;
 }
 
@@ -102,7 +107,8 @@
 
 .product__block-broadcast {
   background-image: url('../images/products/megafon.png');
-  background-position: top -28px left 177px;
+  background-position: top -14px left 177px;
+  background-size: 540px 535px;
 }
 
 .product__block-camera {
@@ -121,6 +127,7 @@
 .product__block-meet {
   background-position: top 0px left 176px;
   background-image: url('../images/products/meet.png');
+  background-size: 524px 514px;
 }
 
 .product__block-producer {

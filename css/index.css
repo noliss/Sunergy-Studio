@@ -100,6 +100,10 @@
   position: relative;
 }
 
+.studio-slider__list-item span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .studio-slider__list-item::before {
   display: block;
   position: absolute;

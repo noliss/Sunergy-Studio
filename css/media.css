@@ -421,11 +421,11 @@
   .about-us__video {
     max-width: 440px;
   }
-  .about-us__video::before {
+  /* .about-us__video::before {
     background-size: contain;
     width: 40px;
     height: 40px;
-  }
+  } */
   .slider-four__title {
     font-size: 26px;
   }
@@ -479,11 +479,11 @@
   .about__video {
     max-width: 420px;
   }
-  .about__block::before {
+  /* .about__block::before {
     background-size: contain;
     width: 43px;
     height: 43px;
-  }
+  } */
   .produced__info {
     max-width: 497px;
     margin-left: 0;
@@ -563,7 +563,7 @@
     max-width: 290px;
   }
   .slick-slide img {
-    max-width: 290px;
+    /* max-width: 290px; */
   }
   .studio-slider__about {
     max-width: 290px;
@@ -606,11 +606,11 @@
   .about__video {
     max-width: 420px;
   }
-  .about__block::before {
+  /* .about__block::before {
     background-size: contain;
     width: 43px;
     height: 43px;
-  }
+  } */
   .application__block {
     max-width: 410px;
     margin: 0 auto;
@@ -645,11 +645,11 @@
   .about__video {
     max-width: 290px;
   }
-  .about__block::before {
+  /* .about__block::before {
     background-size: contain;
     width: 28px;
     height: 28px;
-  }
+  } */
   .example__block {
     max-width: 290px;
     margin: 0 auto;
@@ -716,11 +716,14 @@
 
 @media screen and (max-width: 430px) {
   .interview__item {
-    width: 100%;
+    /* width: 100%; */
+  }
+  .interview__info {
+    width: unset;
   }
   .interview__image {
-    max-width: 232px !important;
-    min-width: 100%;
+    max-width: 234px !important;
+    min-width: 100% !important;
     min-height: 166px;
   }
 }
@@ -738,4 +741,7 @@
 }
 
 @media screen and (max-width: 340px) {
+  .interview__image {
+    max-width: 230px !important;
+  }
 }
