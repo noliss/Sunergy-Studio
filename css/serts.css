@@ -1,3 +1,7 @@
+.sert {
+  margin-top: -50px;
+}
+
 .sert::after {
   position: absolute;
   content: "";
