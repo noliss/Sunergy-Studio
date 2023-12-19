@@ -338,6 +338,10 @@ h2 span {
   margin: 26px 0;
 }
 
+.form__label a {
+  color: #ffa500;
+}
+
 .form__checkbox + .form__label::before {
   content: "";
   display: inline-block;
