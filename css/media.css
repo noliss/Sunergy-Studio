@@ -30,7 +30,7 @@
     background-size: 449px 442px;
     background-position: top -35px left 171px;
   }
-  .product-nav__item {
+  .product-nav__link {
     margin-left: 0px !important;
   }
   .sert__img {
@@ -302,7 +302,7 @@
   .product-nav {
     margin-top: 20px;
   }
-  .product-nav__item {
+  .product-nav__link {
     width: 100%;
     max-width: 100%;
   }
@@ -321,6 +321,10 @@
   }
   .product-text__item {
     font-size: 16px;
+  }
+  .product-nav__item {
+    width: 100%;
+    max-width: 100%;
   }
   .application__block {
     justify-content: center;
@@ -472,6 +476,12 @@
   }
   .tech-card {
     max-width: 290px;
+  }
+  .tech-card__title {
+    padding-top: 50px;
+  }
+  .tech-card__title::before {
+    top: 59%;
   }
 }
 
@@ -683,10 +693,11 @@
   }
   .tech-card__title {
     font-size: 22px;
-    padding-left: 130px;
+    padding-left: 0px;
   }
   .tech-card__title::before {
-    left: 110px;
+    left: -18px;
+    top: 60%;
   }
   .tech-card__list {
     font-size: 18px;
