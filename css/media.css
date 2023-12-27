@@ -464,6 +464,14 @@
   .equipment::after {
     display: none;
   }
+  .our-clients__image {
+    max-width: 430px;
+    max-height: 245px;
+  }
+  .our-clients__link::before {
+    left: calc(50% - -9px);
+    top: calc(50% - 147px);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -707,6 +715,14 @@
     font-size: 18px;
     padding: 0;
     padding-right: 20px;
+  }
+  .our-clients__image {
+    max-width: 290px;
+    max-height: 245px;
+  }
+  .our-clients__link::before {
+    left: calc(50% - -2px);
+    top: calc(50% - 102px);
   }
 }
 

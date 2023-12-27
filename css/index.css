@@ -1,6 +1,6 @@
 .header--main {
   position: absolute;
-  background-image: url('../images/sunergy_studio.png')
+  background-image: url("../images/sunergy_studio.png");
 }
 
 .about {
@@ -13,7 +13,7 @@
   content: "";
   width: 100%;
   max-height: 615px;
-  background-image: url('../images/sunergy_studio.png');
+  background-image: url("../images/sunergy_studio.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -22,7 +22,6 @@
   top: 33px;
   z-index: -99;
   transform: translateX(-50%);
-  
 }
 
 .about h1 {
@@ -41,7 +40,7 @@
 
 .about-info__text {
   max-width: 712px;
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
   margin-bottom: 70px;
 }
@@ -86,7 +85,7 @@
 }
 
 .studio-slider__name {
-  color: #FFF;
+  color: #fff;
   font-size: 33px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -95,7 +94,7 @@
 .studio-slider__list-item {
   margin-bottom: 14px;
   padding-left: 20px;
-  color: #FFF;
+  color: #fff;
   font-size: 25px;
   position: relative;
 }
@@ -110,7 +109,7 @@
   left: 0;
   top: 8px;
   content: "";
-  background-color: #FFA500;
+  background-color: #ffa500;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -136,7 +135,7 @@
   content: "";
   width: 11px;
   height: 14px;
-  background-image: url('../icons/geo.svg');
+  background-image: url("../icons/geo.svg");
   background-size: cover;
   position: absolute;
   left: 0;
@@ -178,108 +177,30 @@
   margin-top: 38px;
 }
 
-.clients {
-  display: none;
-  position: relative;
+.our-clients__block {
+  text-align: center;
 }
 
-.clients::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  max-height: 615px;
-  background-image: url('../images/main/clients/bg.png');
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 670px;
-  left: 50%;
-  top: -15px;
-  z-index: -99;
-  transform: translateX(-50%);
-  
-}
-
-.clients .container {
-  padding: 0 57.5px;
-}
-
-.clients-sliders {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.clients-sliders__video {
+.our-clients__image {
   max-width: 670px;
-  max-height: 382px;
+  max-height: 368px;
+  border-radius: 5px;
+  border: 2px solid #fff;
 }
 
-.clients-sliders__video-ctn {
-  position: relative;
-  cursor: pointer;
-}
-
-.clients-sliders__video-ctn::before {
-  content: '';
-  cursor: pointer;
-  width: 44px;
-  height: 44px;
-  background-image: url('../icons/play.svg');
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.clients-sliders__videos-block {
-  max-width: 384px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.clients-sliders__videos-block a img {
-  margin-bottom: 4px;
+.our-clients__link {
   position: relative;
 }
 
-.clients-sliders__videos-block {
-  position: relative;
-}
-
-.clients-sliders__videos-item a:nth-child(2n + 1) img {
-  padding-right: 11px;
-}
-
-.clients-sliders__videos-item {
-  min-width: 181px;
-  min-height: 181px;
-  position: relative;
-}
-
-.clients-slider__video-name {
-  font-size: 33px;
-  font-weight: 700;
-  text-align: center;
-  padding: 14px 0 2px;
-}
-
-.clients-slider__video-podcast {
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-}
-
-.clients-sliders__videos-item::before {
-  content: '';
+.our-clients__link::before {
+  content: "";
   cursor: pointer;
   width: 44px;
-  height: 44px;
-  background-image: url('../icons/play.svg');
+  height: 45px;
+  background-image: url("../icons/play.svg");
   position: absolute;
-  left: calc(50% - 5px);
-  top: calc(50% - 26px);
+  left: calc(50% - -1px);
+  top: calc(50% - 203px);
   transform: translate(-50%);
   z-index: 10;
 }
