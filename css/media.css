@@ -469,8 +469,8 @@
     max-height: 245px;
   }
   .our-clients__link::before {
-    left: calc(50% - -9px);
-    top: calc(50% - 147px);
+    left: calc(50% - -7px);
+    top: calc(50% - 34px);
   }
 }
 
@@ -531,6 +531,9 @@
   }
   .about-info__socials a {
     margin-right: 10px;
+  }
+  .our-clients__block {
+    width: 100%;
   }
 }
 
@@ -721,8 +724,11 @@
     max-height: 245px;
   }
   .our-clients__link::before {
-    left: calc(50% - -2px);
-    top: calc(50% - 102px);
+    left: calc(50% - 0px);
+    top: calc(50% - 30px);
+  }
+  .slick-slide img {
+    max-height: 216px;
   }
 }
 

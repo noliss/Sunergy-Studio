@@ -179,6 +179,9 @@
 
 .our-clients__block {
   text-align: center;
+  margin: 0 auto;
+  max-width: 652px;
+  width: 652px;
 }
 
 .our-clients__image {
@@ -186,6 +189,7 @@
   max-height: 368px;
   border-radius: 5px;
   border: 2px solid #fff;
+  margin: 0 auto;
 }
 
 .our-clients__link {
@@ -199,8 +203,8 @@
   height: 45px;
   background-image: url("../icons/play.svg");
   position: absolute;
-  left: calc(50% - -1px);
-  top: calc(50% - 203px);
+  left: calc(50% - -2px);
+  top: calc(50% - 31px);
   transform: translate(-50%);
   z-index: 10;
 }

@@ -1,4 +1,22 @@
 $(document).ready(function(){
+  $('.our-clients__block').slick({
+    prevArrow: "<img class='slick__arrow--left' src='../icons/arrow-left.svg' />",
+    nextArrow: "<img class='slick__arrow--right' src='../icons/arrow-right.svg' />",
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    // autoplaySpeed: 3000,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 1150,
+        settings: {
+          arrows: false,
+          dots: true,
+        }
+      }
+    ]
+  });
   $('.studio-slider').slick({
     prevArrow: "<img class='slick__arrow--left' src='../icons/arrow-left.svg' />",
     nextArrow: "<img class='slick__arrow--right' src='../icons/arrow-right.svg' />",

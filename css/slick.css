@@ -135,3 +135,11 @@
     z-index: 10;
     cursor: pointer;
 }
+
+.our-clients__block .slick__arrow--left {
+    left: -80px;
+}
+
+.our-clients__block .slick__arrow--right {
+    right: -80px;
+}
