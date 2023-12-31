@@ -461,7 +461,8 @@
   .sert::after,
   .producers::after,
   .produced::after,
-  .equipment::after {
+  .equipment::after,
+  .our-clients::after {
     display: none;
   }
   .our-clients__image {

@@ -177,11 +177,31 @@
   margin-top: 38px;
 }
 
+.our-clients {
+  position: relative;
+}
+
 .our-clients__block {
   text-align: center;
   margin: 0 auto;
   max-width: 652px;
   width: 652px;
+}
+
+.our-clients::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-height: 615px;
+  background-image: url('../images/main/clients/bg.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 670px;
+  left: 50%;
+  top: -60px;
+  z-index: -99;
+  transform: translateX(-50%);
 }
 
 .our-clients__image {
